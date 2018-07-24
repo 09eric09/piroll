@@ -1,0 +1,331 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Montserrat';
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+}
+
+#about p,
+#services p,
+#contact p,
+#process p{
+font-family: 'Nunito';
+font-size: 16px;
+color: rgb(120, 120, 120)
+}
+
+
+.active{
+  color: rgb(16, 201, 195);
+}
+
+.header-container{
+  min-height: 660px;
+  background: rgb(233, 233, 233);
+}
+
+.header-inner{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.main-nav li{
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.main-nav a{
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+}
+
+.main-nav a:visited{
+  color: rgb(20, 20, 20);
+}
+
+.showcase{
+  text-align: center;
+}
+
+.showcase h1{
+  font-size: 38px;
+  padding-top: 100px;
+}
+
+.showcase p{
+  font-family: 'NunitoSans';
+  font-size: 18px;
+  color: rgb(120, 120, 120);
+}
+
+.contact-button{
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  background: rgb(16, 201, 195);
+}
+
+#submit-button{
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  background: rgb(16, 201, 195);
+  border: none;
+}
+
+#about{
+  margin-top: 80px;
+  text-align: center;
+}
+
+#about img{
+  margin-top: 15px;
+}
+
+.about-inner,
+.contact-inner,
+.process-inner{
+  width: 55%;
+  margin: 0 auto;
+}
+
+#skills{
+  margin-top: 100px;
+  min-height: 560px;
+  background: linear-gradient(
+    to right,
+    rgb(248, 249, 249) 0%,
+    rgb(248, 249, 249) 50%,
+    rgb(233, 233, 233) 50%,
+    rgb(233, 233, 233) 100%
+  );
+}
+
+#skills h2{
+  padding-top: 150px;
+}
+
+#skills img{
+  display: block;
+  width: 80%;
+}
+
+#skills p{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#numbers{
+  text-align: center;
+  background: rgb(16, 201, 195);
+  color: #fff;
+  padding: 4em 0;
+}
+
+#numbers span{
+  font-size: 12px;
+}
+
+#work .col{
+  margin: 0;
+  padding: 0;
+}
+
+#work img{
+  width: 100%;
+  height: 100%;
+}
+
+#process{
+  margin: 100px 0;
+  text-align: center;
+}
+
+.process-inner{
+  margin-bottom: 60px;
+}
+
+#services{
+  background: rgb(245, 245, 245);
+  text-align: center;
+  padding: 40px 0;
+}
+
+#services p{
+  margin-top: 0;
+}
+
+#services h5{
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+#testimonials{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  background: rgb(16, 201, 195);
+  color: #fff;
+  padding: 5em 0;
+}
+
+.testimonials-content{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.testimonials-content span{
+  font-size: 12px;
+}
+
+.client-gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0;
+}
+
+.client-gallery li{
+  padding: 10px 15px;
+}
+
+#contact{
+  text-align: center;
+  background: rgb(245, 245, 245);
+  padding: 4em 0;
+}
+
+.input-form{
+  margin-top: 30px;
+}
+
+.input-form input{
+  padding: 10px 5px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.user-title{
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+}
+
+#contact textarea{
+  width: 100%;
+  margin: 30px 0;
+  padding: 10px 5px;
+  border: none;
+}
+
+.col{
+  padding: 0 15px;
+}
+
+footer{
+  text-align: center;
+  font-family: 'NunitoSans';
+  background:  rgb(20, 20, 20);
+  font-size: 15px;
+  color: rgb(188, 188, 188);
+  padding: 4em 0;
+}
+
+footer h3{
+  color: #fff;
+}
+
+/* Media Queries */
+
+@media all and (min-width: 768px){
+  .row,
+  .numbers-content,
+  .header-inner,
+  .main-nav,
+  .input-form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-inner{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .showcase,
+  #numbers,
+  footer{
+    text-align: left;
+  }
+
+  .showcase-content{
+    max-width: 45%;
+    margin-left: auto;
+  }
+
+  .numbers-content img{
+    align-self: center;
+    margin-right: 10px;
+  }
+
+  .col-3{
+    flex: 1 22%;
+    margin: 1%;
+  }
+
+  .col-6
+  {
+    flex: 1 45%;
+  }
+
+  .client-gallery{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-form input{
+    flex-basis: 45%;
+  }
+
+  .input-form{
+    justify-content: space-between;
+  }
+
+  .footer-col-1{
+    padding-right: 16em;
+  }
+
+  .footer-col-2{
+    padding-right: 8em;
+  }
+
+  .footer-col-3{
+    padding-right: 3em;
+  }
+
+  .footer-col-4{
+    margin-right: auto;
+  }
+
+}
+
+@media all and (min-width: 992px){
+
+}
